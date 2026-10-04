@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notes Diary - One page for everything you write</title>
-    <meta name="description" content="A free-flowing diary with no pages, folders, or files to manage. One continuous stream, organized automatically by #tags and @dates, auto-synced to your Google Drive.">
+    <meta name="description" content="A free-flowing diary with no pages, folders, or files to manage. One continuous stream, organized automatically by #tags and @dates, encrypted with your password, synced to your Google Drive, with your Google Calendar alongside.">
     <style>
         * {
             margin: 0;
@@ -167,6 +167,10 @@
         .feature:nth-child(2) { animation-delay: 0.12s; }
         .feature:nth-child(3) { animation-delay: 0.19s; }
         .feature:nth-child(4) { animation-delay: 0.26s; }
+        .feature:nth-child(5) { animation-delay: 0.33s; }
+        .feature:nth-child(6) { animation-delay: 0.40s; }
+        .feature:nth-child(7) { animation-delay: 0.47s; }
+        .feature:nth-child(8) { animation-delay: 0.54s; }
 
         .feature:hover {
             border-color: rgba(148, 163, 184, 0.4);
@@ -449,12 +453,12 @@
                 <span class="icon">&#127991;</span>
                 <h3>Structure comes from what you type</h3>
                 <p>
-                    Drop a <code>#tag</code> or an <code>@date</code> anywhere in a line and the
-                    sidebar fills itself in. Browse by tag, or by month and day. Nothing to file,
+                    Drop a <code>#tag</code> or a date like <code>@2026-01-15</code> anywhere in a line and the
+                    sidebar fills itself in. Browse by tag (with nested <code>#parent/child</code> tags) or by month and day. Nothing to file,
                     move, or reorganize &mdash; the structure is derived from your words, never imposed on them.
                 </p>
                 <div class="tokens">
-                    <span>#ideas</span><span>#1:1</span><span>#work/urgent</span><span>@2026-01-15</span>
+                    <span>#ideas</span><span>#1:1</span><span>#work/urgent</span><span>@2026-01-15</span><span>@01/15/2026</span>
                 </div>
             </div>
 
@@ -473,8 +477,49 @@
                 <h3>Local-first and private</h3>
                 <p>
                     Your writing is stored in your browser and works fully offline &mdash; no account,
-                    no server holding your data. Drive sync is optional, uses your own account, and
+                    no server holding your data. Every project is protected by a password that encrypts
+                    your entries on your device. Drive sync is optional, uses your own account, and
                     you can disconnect it any time.
+                </p>
+            </div>
+
+            <div class="feature">
+                <span class="icon">&#128197;</span>
+                <h3>Your Google Calendar, beside your notes</h3>
+                <p>
+                    Open a calendar pane next to your diary to see the past week and the next 30 days.
+                    Filter by RSVP status, jump to the meeting happening now, join video calls in one click,
+                    and insert an event's link straight into a note.
+                </p>
+            </div>
+
+            <div class="feature">
+                <span class="icon">&#9201;</span>
+                <h3>Upcoming and Past at a glance</h3>
+                <p>
+                    Put a date like <code>@2026-01-15</code> on a line and switch between <strong>Upcoming</strong> and
+                    <strong>Past</strong> tabs to see what's next or what's behind you. Combine with tags
+                    and search to narrow further. Task lists render as real, clickable checkboxes.
+                </p>
+            </div>
+
+            <div class="feature">
+                <span class="icon">&#128444;</span>
+                <h3>Paste images right into a note</h3>
+                <p>
+                    Paste or drag a PNG, JPEG, GIF or WebP into any note and it's uploaded to your own
+                    Drive folder and shown as a thumbnail. Images are not encrypted &mdash; anyone with
+                    access to that Drive folder can see them.
+                </p>
+            </div>
+
+            <div class="feature">
+                <span class="icon">&#128450;</span>
+                <h3>Multiple projects, your backups</h3>
+                <p>
+                    Keep separate diaries &mdash; work, personal, a trip &mdash; each with its own password and
+                    Drive folder. Split a project into backup files with filter rules, download as JSON
+                    or Markdown, and import into a new project from a file or from Drive.
                 </p>
             </div>
 
@@ -487,7 +532,7 @@
                     <h4>Write</h4>
                     <p>
                         Type into the one page. Markdown renders as you go. Add <code>#tags</code> and
-                        <code>@dates</code> inline whenever they're useful &mdash; or don't.
+                        dates like <code>@2026-01-15</code> inline whenever they're useful &mdash; or don't.
                     </p>
                 </div>
                 <div class="step">
